@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DotGothic16', sans-serif;
+  background-color: #022438;
+  letter-spacing: 2px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+header h1 {
+  color: #15D26F;
+}
+
+.risultati {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.risultati h2 {
+  margin-top: 20px;
+}
+
+.white {
+  color: #fff;
+}
+
+.red {
+  color: #E91864;
+}
+
+.green {
+  color: #15D26F;
+}
