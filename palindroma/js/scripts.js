@@ -1,14 +1,29 @@
 // Chiedere all’utente di inserire una parola
+
+var utente = prompt("Inserisci una parola");
+utente = utente.toLowerCase();
+
 // Creare una funzione per capire se la parola inserita è palindroma
 
-function palindroma (parola) {
-  for ( var i = 0; i < parola.length; i++) {
-    console.log(parola[i]);
+function palindroma(parola) {
+
+  var parolaRev = "";
+
+  for ( var j = parola.length - 1; j >= 0; j--) {
+    parolaRev += parola[j];
   }
-  for ( var j = parola.length; j < 1; j--) {
-    console.log(j);
-    console.log(parola.length);
-  }
+
+  return parolaRev;
+
 }
 
-var utente = palindroma(prompt("Inserisci una parola"));
+var utenteRev = palindroma(utente);
+
+console.log(utente);
+console.log(utenteRev);
+
+if (utente == utenteRev) {
+  console.log( utente + " è una parola palindroma");
+} else {
+  console.log( utente + " non è una parola palidroma");
+}
