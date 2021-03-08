@@ -2,7 +2,7 @@
 
 var utente;
 
-var numero1 = 0;
+var numero1 = -1;
 
 while (utente != "pari" && utente != "dispari") {
   utente = prompt("Scegli se pari o dispari");
@@ -11,9 +11,9 @@ while (utente != "pari" && utente != "dispari") {
 
 console.log(utente);
 
-numero1 = parseInt(prompt("Scegli un numero da 1 a 5"));
-
-
+while (numero1 < 0 || numero1 > 5){
+  var numero1 = parseInt(prompt("Scegli un numero da 1 a 5"));
+}
 
 console.log(numero1);
 
