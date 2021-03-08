@@ -5,6 +5,7 @@ utente = utente.toLowerCase();
 
 // Creare una funzione per capire se la parola inserita è palindroma
 
+// Questa funzione prende una parola e la scrive al contrario in una nuova variabile
 function palindroma(parola) {
 
   var parolaRev = "";
@@ -19,11 +20,11 @@ function palindroma(parola) {
 
 var utenteRev = palindroma(utente);
 
-console.log(utente);
-console.log(utenteRev);
+
+document.getElementById("scelta").innerHTML = "Hai scelto la parola " + utente;
 
 if (utente == utenteRev) {
-  console.log( utente + " è una parola palindroma");
+  document.getElementById("risultato").innerHTML = utente + " è una parola palindroma";
 } else {
-  console.log( utente + " non è una parola palidroma");
+  document.getElementById("risultato").innerHTML = utente + " non è una parola palindroma";
 }

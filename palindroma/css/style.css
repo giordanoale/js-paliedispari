@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Stick', sans-serif;
+  background-color: #032E89;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  color: #fff;
+}
+
+.scelta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  color: #fff;
+}
+
+#risultato {
+
+  margin-top: 20px;
+  color: #15D26F;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
